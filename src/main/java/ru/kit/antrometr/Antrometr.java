@@ -118,14 +118,14 @@ public class Antrometr {
 
     public void setAbdominalMuscles(String sAbdominalMuscles) {
         double abdominalMuscles = Double.parseDouble(sAbdominalMuscles);
-        checkData(abdominalMuscles);
+        //checkData(abdominalMuscles);
         this.abdominalMuscles = abdominalMuscles;
         inspections.put(InspectionName.abdominal_muscles, abdominalMuscles);
     }
 
     public void setBackMuscles(String sBackMuscles) {
         double backMuscles = Double.parseDouble(sBackMuscles);
-        checkData(backMuscles);
+        //checkData(backMuscles);
         this.backMuscles = backMuscles;
         inspections.put(InspectionName.back_muscles, backMuscles);
     }
