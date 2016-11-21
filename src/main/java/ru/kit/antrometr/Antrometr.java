@@ -111,7 +111,6 @@ public class Antrometr {
 
     public void setFlexibilitySpine(String sFlexibilitySpine) {
         double flexibilitySpine = Double.parseDouble(sFlexibilitySpine);
-        checkData(flexibilitySpine);
         this.flexibilitySpine = flexibilitySpine;
         inspections.put(InspectionName.flexibility_spine, flexibilitySpine);
     }
@@ -132,16 +131,8 @@ public class Antrometr {
 
     public void setFlexibilityJoints(String sFlexibilityJoints) {
         double flexibilityJoints = Double.parseDouble(sFlexibilityJoints);
-        checkData(flexibilityJoints);
         this.flexibilityJoints = flexibilityJoints;
         inspections.put(InspectionName.flexibility_joints, flexibilityJoints);
-    }
-
-    public void checkData(double data)
-    {
-        if (data < -10 || data > 10) {
-            throw new IllegalArgumentException();
-        }
     }
 
     public boolean isMan() {

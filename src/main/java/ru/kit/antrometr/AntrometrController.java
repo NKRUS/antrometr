@@ -69,12 +69,12 @@ public class AntrometrController {
         if (antrometr.isMan() && !antrometr.isWoman())
         {
             //picManImageView.setImage(new Image(getClass().getResource("/ru/kit/antrometr/image/pic_man.png").toString()));
-            gc.drawImage(new Image(getClass().getResource("/ru/kit/antrometr/image/pic_man.png").toString()), 0.0, 0.0, 357, 629);
+            gc.drawImage(new Image(getClass().getResource("/ru/kit/antrometr/image/pic_man.png").toString()), 0.0, 0.0, 289, 535);
         }
         else if (antrometr.isWoman() && !antrometr.isMan())
         {
             //picManImageView.setImage(new Image(getClass().getResource("/ru/kit/antrometr/image/pic_woman.png").toString()));
-            gc.drawImage(new Image(getClass().getResource("/ru/kit/antrometr/image/pic_woman.png").toString()), 0.0, 0.0, 357, 629);
+            gc.drawImage(new Image(getClass().getResource("/ru/kit/antrometr/image/pic_woman.png").toString()), 0.0, 0.0, 289, 535);
         }
     }
 
@@ -123,18 +123,18 @@ public class AntrometrController {
             return;
         }
         //GraphicsContext gc = picManCanvas.getGraphicsContext2D();
-        gc.clearRect(0, 0, 365 , 614);
+        gc.clearRect(0, 0, 289 , 535);
         insertImage();
-        gc.fillText(String.valueOf(antrometr.getHeight()), 20, 300);
+        gc.fillText(String.valueOf(antrometr.getHeight()), 10, 268);
         try
         {
             if (thoraxAloneField.getText() != null && thoraxAloneField.getText().length() != 0)
             {
                 antrometr.setThoraxAlone(thoraxAloneField.getText());
                 if (antrometr.isMan() && !antrometr.isWoman())
-                    gc.fillText(String.valueOf(antrometr.getThoraxAlone()), 180, 180);
+                    gc.fillText(String.valueOf(antrometr.getThoraxAlone()), 147, 152);
                 else
-                    gc.fillText(String.valueOf(antrometr.getThoraxAlone()), 180, 160);
+                    gc.fillText(String.valueOf(antrometr.getThoraxAlone()), 147, 134);
             }
             if (horaxOnInspirationField.getText() != null && horaxOnInspirationField.getText().length() != 0)
             {
@@ -148,9 +148,9 @@ public class AntrometrController {
             {
                 antrometr.setWaistAboveNavel(waistAboveNavelField.getText());
                 if (antrometr.isMan() && !antrometr.isWoman())
-                    gc.fillText(String.valueOf(antrometr.getWaistAboveNavel()), 180, 250);
+                    gc.fillText(String.valueOf(antrometr.getWaistAboveNavel()), 147, 211);
                 else
-                    gc.fillText(String.valueOf(antrometr.getWaistAboveNavel()), 180, 215);
+                    gc.fillText(String.valueOf(antrometr.getWaistAboveNavel()), 147, 182);
 
             }
             if (waistAtNavelField.getText() != null && waistAtNavelField.getText().length() != 0)
@@ -161,18 +161,18 @@ public class AntrometrController {
             {
                 antrometr.setButtocks(buttocksField.getText());
                 if (antrometr.isMan() && !antrometr.isWoman())
-                    gc.fillText(String.valueOf(antrometr.getButtocks()), 180, 321);
+                    gc.fillText(String.valueOf(antrometr.getButtocks()), 147, 272);
                 else
-                    gc.fillText(String.valueOf(antrometr.getButtocks()), 180, 290);
+                    gc.fillText(String.valueOf(antrometr.getButtocks()), 147, 246);
 
             }
             if (volumeLeftFemurField.getText() != null && volumeLeftFemurField.getText().length() != 0)
             {
                 antrometr.setVolumeLeftFemur(volumeLeftFemurField.getText());
                 if (antrometr.isMan() && !antrometr.isWoman())
-                    gc.fillText(String.valueOf(antrometr.getVolumeLeftFemur()), 213, 375);
+                    gc.fillText(String.valueOf(antrometr.getVolumeLeftFemur()), 172, 317);
                 else
-                    gc.fillText(String.valueOf(antrometr.getVolumeLeftFemur()), 213, 370);
+                    gc.fillText(String.valueOf(antrometr.getVolumeLeftFemur()), 170, 312);
             }
             if (volumeRightFemurField.getText() != null && volumeRightFemurField.getText().length() != 0)
             {
@@ -182,9 +182,9 @@ public class AntrometrController {
             {
                 antrometr.setVolumeLeftShoulder(volumeLeftShoulderField.getText());
                 if (antrometr.isMan() && !antrometr.isWoman())
-                    gc.fillText(String.valueOf(antrometr.getVolumeLeftShoulder()), 253, 197);
+                    gc.fillText(String.valueOf(antrometr.getVolumeLeftShoulder()), 205, 165);
                 else
-                    gc.fillText(String.valueOf(antrometr.getVolumeLeftShoulder()), 240, 187);
+                    gc.fillText(String.valueOf(antrometr.getVolumeLeftShoulder()), 198, 155);
             }
             if (volumeRightshoulderField.getText() != null && volumeRightshoulderField.getText().length() != 0)
             {

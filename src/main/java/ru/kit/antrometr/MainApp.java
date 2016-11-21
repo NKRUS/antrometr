@@ -22,7 +22,7 @@ public class MainApp extends Application {
         Parent root = new Pane();
         primaryStage.setTitle("hi");
         primaryStage.setScene(new Scene(root));
-        Stage stage = new AntrometrStage(false, true, 150.0, 82.0, "");
+        Stage stage = new AntrometrStage(true, false, 150.0, 82.0, "");
 
         stage.show();
 
